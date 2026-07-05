@@ -1,0 +1,29 @@
+{
+  "students": [
+    { "studentId": "STU001", "name": "Rahul Sharma",   "rollNo": "22CS101", "branch": "Computer Science", "year": 3, "fingerprintId": 1 },
+    { "studentId": "STU002", "name": "Priya Nair",     "rollNo": "22CS102", "branch": "Computer Science", "year": 3, "fingerprintId": 2 },
+    { "studentId": "STU003", "name": "Arjun Mehta",    "rollNo": "22CS103", "branch": "Computer Science", "year": 3, "fingerprintId": 3 },
+    { "studentId": "STU004", "name": "Sneha Reddy",    "rollNo": "22CS104", "branch": "Computer Science", "year": 3, "fingerprintId": 4 },
+    { "studentId": "STU005", "name": "Kiran Patil",    "rollNo": "22CS105", "branch": "Computer Science", "year": 3, "fingerprintId": 5 }
+  ],
+
+  "attendance": [
+    { "studentId": "STU001", "name": "Rahul Sharma",  "date": "2026-06-29", "time": "09:05:00", "status": "Present", "deviceId": "ESP32-LAB-01", "synced": true },
+    { "studentId": "STU002", "name": "Priya Nair",    "date": "2026-06-29", "time": "09:08:00", "status": "Present", "deviceId": "ESP32-LAB-01", "synced": true },
+    { "studentId": "STU003", "name": "Arjun Mehta",   "date": "2026-06-29", "time": "09:22:00", "status": "Late",    "deviceId": "ESP32-LAB-01", "synced": true },
+    { "studentId": "STU004", "name": "Sneha Reddy",   "date": "2026-06-29", "time": "09:06:00", "status": "Present", "deviceId": "ESP32-LAB-01", "synced": true },
+    { "studentId": "STU005", "name": "Kiran Patil",   "date": "2026-06-29", "time": null,        "status": "Absent",  "deviceId": null,            "synced": true },
+
+    { "studentId": "STU001", "name": "Rahul Sharma",  "date": "2026-06-30", "time": "09:03:00", "status": "Present", "deviceId": "ESP32-LAB-01", "synced": true },
+    { "studentId": "STU002", "name": "Priya Nair",    "date": "2026-06-30", "time": "09:11:00", "status": "Present", "deviceId": "ESP32-LAB-01", "synced": true },
+    { "studentId": "STU003", "name": "Arjun Mehta",   "date": "2026-06-30", "time": "09:04:00", "status": "Present", "deviceId": "ESP32-LAB-01", "synced": true },
+    { "studentId": "STU004", "name": "Sneha Reddy",   "date": "2026-06-30", "time": null,        "status": "Absent",  "deviceId": null,            "synced": true },
+    { "studentId": "STU005", "name": "Kiran Patil",   "date": "2026-06-30", "time": "09:09:00", "status": "Present", "deviceId": "ESP32-LAB-01", "synced": true },
+
+    { "studentId": "STU001", "name": "Rahul Sharma",  "date": "2026-07-01", "time": "09:32:00", "status": "Late",    "deviceId": "ESP32-LAB-01", "synced": false },
+    { "studentId": "STU002", "name": "Priya Nair",    "date": "2026-07-01", "time": "09:07:00", "status": "Present", "deviceId": "ESP32-LAB-01", "synced": true },
+    { "studentId": "STU003", "name": "Arjun Mehta",   "date": "2026-07-01", "time": "09:02:00", "status": "Present", "deviceId": "ESP32-LAB-01", "synced": true },
+    { "studentId": "STU004", "name": "Sneha Reddy",   "date": "2026-07-01", "time": "09:05:00", "status": "Present", "deviceId": "ESP32-LAB-01", "synced": true },
+    { "studentId": "STU005", "name": "Kiran Patil",   "date": "2026-07-01", "time": null,        "status": "Absent",  "deviceId": null,            "synced": true }
+  ]
+}

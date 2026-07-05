@@ -1,0 +1,23 @@
+// ============================================================
+//  Firestore Security Rules — Samarth Attendance System
+//  Paste these into: Firebase Console → Firestore → Rules
+// ============================================================
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Students — read by anyone authenticated, write only by admin
+    match /students/{studentId} {
+      allow read:  if request.auth != null;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+
+    // Attendance — ESP32 devices and admin can write; authenticated users can read
+    match /attendance/{recordId} {
+      allow read:  if request.auth != null;
+      allow create: if request.auth != null;      // ESP32 pushes records
+      allow update, delete: if request.auth != null && request.auth.token.admin == true;
+    }
+  }
+}
