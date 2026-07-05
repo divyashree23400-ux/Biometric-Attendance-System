@@ -1,8 +1,8 @@
-# Biometric & RFID Attendance System (ESP32)
+# Biometric Attendance System (ESP32)
 
 Internship project — Titus Solutions
-Author: Sai Prabhat CA
-USN-24BTREC061
+- Author: Sai Prabhat CA
+- USN-24BTREC061
 
 ## Overview
 
