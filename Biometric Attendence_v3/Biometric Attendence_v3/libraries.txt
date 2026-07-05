@@ -1,7 +1,0 @@
-# Wokwi Library List
-# See https://docs.wokwi.com/guides/libraries
-
-SD
-RTClib
-Adafruit GFX Library
-Adafruit SSD1306
