@@ -1,0 +1,8 @@
+# Wokwi Library List
+
+# Automatically added based on includes:
+SD
+RTClib
+Adafruit GFX Library
+Adafruit ILI9341
+
