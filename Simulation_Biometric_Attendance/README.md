@@ -6,35 +6,21 @@ Internship project — Titus Solutions
 
 ## Overview
 
-A working attendance system simulated on Wokwi using an ESP32. Students are identified via RFID card or fingerprint ID (simulated through Serial commands), with attendance results shown on an OLED display, confirmed via LED/buzzer feedback, timestamped using an RTC module, and logged to an SD card in CSV format.
+A working attendance system simulated on Wokwi using an ESP32-S3. Students are identified via RFID card or fingerprint ID (simulated through Serial commands), with attendance results shown on an TFT display, confirmed via LED/buzzer feedback, timestamped using an RTC module, and logged to an SD card in CSV format.
 
 ## Hardware Used
 
 | Component        | Purpose                                |
 |-------------------|-----------------------------------------|
 | ESP32 DevKit      | Main microcontroller                    |
-| OLED 0.9" (SSD1306, 128x64) | Status / attendance display   |
+| TFT ILI9341 | Status / attendance display   |
 | RTC DS1307        | Real-time clock (date & time stamping)  |
 | SD Card Module    | Attendance logging (CSV storage)        |
 | Green LED         | Success indicator                       |
 | Red LED           | Failure/denied indicator                |
 | Buzzer            | Audio feedback (success/error tones)    |
 
-## Pin Configuration
 
-| Signal      | ESP32 Pin |
-|-------------|-----------|
-| OLED SDA    | 21        |
-| OLED SCL    | 22        |
-| SD CS       | 5         |
-| SD MOSI (DI)| 23        |
-| SD MISO (DO)| 19        |
-| SD SCK      | 18        |
-| RTC SDA     | 21 (shared I2C bus) |
-| RTC SCL     | 22 (shared I2C bus) |
-| Green LED   | 25        |
-| Red LED     | 26        |
-| Buzzer      | 27        |
 
 ## Development Stages
 
@@ -42,6 +28,7 @@ A working attendance system simulated on Wokwi using an ESP32. Students are iden
 - **v3** — RFID + fingerprint identity verification logic (Serial-simulated), OLED feedback, LED/buzzer indicators.
 - **v4** — Real-time day & date via RTC DS1307, non-blocking live clock refresh on idle screen, styled attendance screen (ID / Name / Time), "TITUS SOLUTIONS" branding on idle screen.
 - **v5** — SD card logging: every successful scan is appended to `attendance.csv` on the SD card, with a `DUMP` command to print the file's contents over Serial for verification (since Wokwi's SD Card file browser upload/view is a paid-tier feature).
+-**updated** - Updated the userinfo display and few other minor chnages
 
 ## Registered Students
 
