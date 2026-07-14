@@ -1,4 +1,4 @@
-# Biometric Attendance System (ESP32)
+# Biometric Attendance System (ESP32-S3)
 
 Internship project — Titus Solutions
 - Author: Sai Prabhat CA
